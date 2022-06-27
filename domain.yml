@@ -1,0 +1,64 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- affirm
+- assignment
+- bot_challenge
+- class_late
+- courses_list
+- deny
+- fees_paid
+- goodbye
+- greet
+- greet_thanks
+- numpy_dataset
+- out_of_scope
+- pandas_datasheet
+- recordings_not_available
+- resume_building
+- sql_dataset
+- internship
+- change
+- webinar_link
+- access_issue
+responses:
+  utter_greet:
+  - text: Hey! I am a bot from iNeuron how may I assist you
+  utter_goodbye:
+  - text: Bye
+  utter_send_recordings:
+  - text: check in your dashboard in the bottom you will find revision classes.If you do not find please check this link https://learn.ineuron.ai/lesson/Jan-17-Revision-Class/620b783afc57ee789da3c7df/course/Full-Stack-Data-Science-Nov&apos
+  utter_pandas_dataset:
+  - text: Please find resources for pandas here https://drive.google.com/file/d/1U-X-NZ2vQw5aypSuKBmHfwENITQSGBO9/view
+  utter_numpy_dataset:
+  - text: Here are the resources for numpy https://www.w3schools.com/python/numpy/
+  utter_sql_dataset:
+  - text: Here are the resources for sql https://drive.google.com/file/d/1ahVRDlHjfuCMTdG6LWdTHcD98NNtHvZi/edit
+  utter_resume_building:
+  - text: Drop your resume to resume@ineuron.ai, we will check and get back to you
+  utter_course_list:
+  - text: There are currently many courses we offer. Please visit https://courses.ineuron.ai/ for more info
+  utter_assignment:
+  - text: Please visit your dashboard for more details
+  utter_out_of_scope:
+  - image: https://image.shutterstock.com/image-vector/sad-apologizing-emoticon-emoji-holding-260nw-1398672683.jpg
+    text: Sorry, I'm not sure how to respond to that. Can you rephrase it again.
+  utter_say_thanks:
+  - text: you are welcome
+  utter_fees_reply:
+  - text: can you contact iNeuron IT team to solve this query
+  utter_internship:
+  - text: Login to https://internship.ineuron.ai portal with the email you enrolled for the course for more clear information.
+  utter_change:
+  - text: Please drop a mail to contact@ineuron.ai, our support team will get back to you in 24hrs.
+  utter_webinar_link:
+  - text: Please find the class schedule and meeting link below https://us06web.zoom.us/j/87014703052
+  utter_access_issue:
+  - text: we understood your access issue our IT team will reach out to you shortly.
+
+
+
+
+

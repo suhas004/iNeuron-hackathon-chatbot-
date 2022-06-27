@@ -1,0 +1,78 @@
+version: "2.0"
+
+stories:
+
+- story: send recordings path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: recordings_not_available
+  - action: utter_send_recordings
+- story: send pandas dataset
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: pandas_datasheet
+  - action: utter_pandas_dataset
+- story: send sql dataset
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: sql_dataset
+  - action: utter_sql_dataset
+- story: send numpy dataset
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: numpy_dataset
+  - action: utter_numpy_dataset
+- story: send resume feedback
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: resume_building
+  - action: utter_resume_building
+- story: send courses list
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: courses_list
+  - action: utter_course_list
+- story: send assignment list
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: assignment
+  - action: utter_assignment
+- story: regarding fees reply
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fees_paid
+  - action: utter_fees_reply
+- story: internship
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: internship
+  - action: utter_internship
+- story: send webinar
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: webinar_link
+  - action: utter_webinar_link
+- story: access issue
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: access_issue
+  - action: utter_access_issue
+- story: out of scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+- story: say thanks
+  steps:
+  - intent: greet_thanks
+  - action: utter_say_thanks

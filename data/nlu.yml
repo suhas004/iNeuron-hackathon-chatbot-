@@ -1,0 +1,203 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - good morning
+    - good evening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - you are a bot right
+    - aren't you a bot
+    - Are you a bot?
+    - are you a BOT
+    - are you a chatbot
+    - are you a rasa bot?
+    - are you a real bot?
+    - are you a robot
+    - are you ai
+    - are you artificial
+    - are you artificial intelligence
+    - are you bot
+    - are you bot?
+    - are you rasa bot?
+    - are you real
+    - are you real lol
+    - are you really a bot
+    - are you robot
+    - are you sure that you're a bot?
+    - bot?
+    - cuz you are a bot
+    - i guess you are a chatbot
+    - oh are you chatbot?
+    - tell me, are you a bot?
+    - what are you, a bot?
+    - you are a robot
+    - you are ai
+    - you are chatbot
+    - you're a bot
+    - you robo
+    - real bot then?
+    - are you really a bbot?
+    - Are you a person?
+
+- intent: recordings_not_available
+  examples: |
+    - where can I find the revision classes
+    - I cannot see my class recordings
+    - can you share TIme series analysis recordings
+    - I missed last few Classes. I could not find any recordings.
+    - can you please help where I can get recordings
+    - can you provide link to community class happening now
+
+- intent: sql_dataset
+  examples: |
+    - Can you provide the SQL datasheet
+    - where can I find SQL resources
+    - are thare any resources for sql
+- intent: pandas_datasheet
+  examples: |
+    - Can you provide the pandas datasheet
+    - where can I find pandas resources
+    - are thare any resources for pandas
+- intent: numpy_dataset
+  examples: |
+    - Can you provide the numpy datasheet
+    - where can I find numpy resources
+    - are thare any resources for numpy
+- intent: resume_building
+  examples: |
+    - Hello! I finished the course, can you help me building my resume?
+    - Can you help me to write resume for datascience role?
+    - How can I get help for making my resume?
+    - I need resume discussion meeting
+- intent: courses_list
+  examples: |
+    - What courses are available currently at iNeuron?
+    - May I know the syllabus of full stack data science?
+    - Is machine learning course availabale
+- intent: assignment
+  examples: |
+    - I finished powerbi course for for data analyist, but i cannot find the assisgnment
+    - where can I find the assignment for MLOPS course
+    - How to get the assignment for my current course?
+- intent: out_of_scope
+  examples: |
+    - what is the square root of 5
+    - I want to know the weather
+    - what is the meaning of life.
+    - Fridge Isn't Running
+    - my tv isn't working
+    - I want a pizza
+    - my washing machine isn't working
+    - what year is it
+    - order a pizza
+    - I want to order a pizza
+    - what is the weather today
+    - what is the weather
+    - how old are you?
+    - add two plus two
+    - Hdjejene
+    - asd
+    - title
+    - how about the forecast
+    - foolish
+    - joke
+    - Can I get a hamburger?
+    - Can YouTube talk?
+    - Can you call me back ?
+    - Can you give me your datacenter's password
+    - Can you give me your datacenter's password?
+    - Can you make sandwiches?
+    - Can you please send me an uber
+- intent: greet_thanks
+  examples: |
+    - thank you very much sir
+    - it was pleasure speaking with you
+    - many thanks for the information you have provided
+    - thanks for your quick response
+- intent: fees_paid
+  examples: |
+    - I have paid my fees but did not got successfull message
+    - is it possible can you refund my fees
+    - is it possible to postpone my course schedule
+    - is it possible to prepone my course schedule
+- intent: class_late
+  examples: |
+    - late coming
+    - coming late
+- intent: internship
+  examples: |
+    - what projects do I get in ineuron internship?
+    - How can i find my internship project?
+    - May I know the duration of internship?
+    - where can I get internship certificate?
+    - what all projects availabale in Intenrship?
+- intent: change
+  examples: |
+    - I want to change my intenrship project
+    - Can i change my enrolled course?
+    - How can I change my batch?
+- intent: webinar_link
+  examples: |
+    - can you send me webinar link
+    - I cannot found my meeting link can you send me please
+    - from where can I get webinar link
+    - if possible can you send me meeting link
+    - I am facing issues with the meeting link can you resend again
+- intent: access_issue
+  examples: |
+    - I couldn't able to access dashboard
+    - dashboard cannot able to access
+    - asking password to access the workbench
+    - please provide access to DLCVNLP
+    - cannot able to record please give me access
